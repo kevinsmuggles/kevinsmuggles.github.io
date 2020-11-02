@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <style>
-  <p> {
+  body {
+    background-color: black;
+  }
+  h1 {
+    color: green;
+  }
+  p {
     color: pink;
   }
+  .box {
+    border-style: solid;
+    border-color: silver;
+    border-width: 5px;
+    text-align: center;
+  }
   .bossy-text {
-    font-family= Helvetica;
+    font-family= Times New Roman;
     font-size: 20px;
+    margin: 10px 20px 10px 10px;
+    color: blue;
+    background-color: #9ce354;
+    margin: 50px ;
   }
 </style>
 <html lang="en" dir="ltr">
@@ -15,7 +31,10 @@
   </head>
   <body>
     <h1>Kevin Smuggles</h1>
-    <p>This is my first paragraph</p>  
-    <p class="bossy-text">I will make it hipsterish</p>
+    <p>This is my first paragraph</p>
+    <div class="box">
+      <p class="bossy-text">I will make it hipsterish</p>
+    </div>
   </body>
 </html>
+
