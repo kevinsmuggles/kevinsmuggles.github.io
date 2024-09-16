@@ -16,3 +16,28 @@ const h2 = new Hydra({
     enableStreamCapture: false,
 }).synth
 h2.noise().out()
+
+//sezione per i tag
+
+const posts = document.querySelectorAll('.post');
+const tags = document.querySelectorAll('.tag');
+
+tags.forEach(tag => {
+  tag.addEventListener('click', () => {
+    const tagName = tag.getAttribute('data-tag');
+    posts.forEach(post => {
+      const postTags = post.querySelectorAll('.tag');
+      let hasTag = false;
+      postTags.forEach(postTag => {
+        if (postTag.getAttribute('data-tag') === tagName) {
+          hasTag = true;
+        }
+      });
+      if (hasTag) {
+        post.style.display = 'block';
+      } else {
+        post.style.display = 'none';
+      }
+    });
+  });
+});

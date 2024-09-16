@@ -10,8 +10,15 @@
   p {
     color: pink;
   }
+  .tag {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
   .tales {
-    background-color: white
+    background-color: white;
     border-style:dashed;
     border-color: fuchsia;
   }
@@ -33,7 +40,7 @@
     border: 10px;
     border-color: silver;
     border-style: dotted;
-    align: center;
+    text-align: center;
   }
   .gif {
     border-style: dotted;
