@@ -1,13 +1,115 @@
-  body {
-    background-color: black;
-  }
-  h1 {
-    color: green;
-  }
-  h2 {
-    color: silver;
-  }
-  p {
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5F5F5; /* Off-white background */
+    color: #333333; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+a{
+  color: #4B0082; /* Dark plum links */
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s, color 0.3s;
+}
+
+a:hover {
+  color: #C2185B; /* Muted pink on hover */
+  border-bottom: 1px solid #C2185B;
+}
+
+/* Header */
+header {
+    background-color: #4B0082; /* Dark plum */
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #6A1B9A; /* Light plum */
+    padding: 10px 0;
+}
+
+nav a {
+    color: #FFFFFF;
+    margin: 0 15px;
+    padding: 10px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    background-color: #C2185B; /* Muted pink on hover */
+    border-radius: 20px;
+}
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #FFFFFF; /* White content background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Buttons */
+.button {
+    background-color: #4B0082; /* Dark plum */
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #C2185B; /* Muted pink on hover */
+}
+
+a.button {
+  padding: 1px 6px;
+  border: 1px outset buttonborder;
+  border-radius: 3px;
+  color: #e35454;
+  background-color: #54b6e3;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #4B0082; /* Dark plum */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #FFFFFF;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s, color 0.3s;
+}
+
+footer a:hover {
+    color: #C2185B;
+    border-bottom: 1px solid #C2185B;
+}
+
+p {
     color: pink;
   }
   .tag {
